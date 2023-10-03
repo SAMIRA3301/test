@@ -21,12 +21,10 @@ def test_degree(axiliration: float, time: float, radius: float, speed: float, ex
     Function is comparing main answer and true answer
 
     Args:
-        axiliration(float)
-        time(float)
-        radius(float)
-        speed(float)
-        exp(float)
-    :return:
-
+        axiliration: float
+        time: float
+        radius: float
+        speed: float
+        exp: float
     """
     assert search_degree(time, axiliration, radius, speed) == exp

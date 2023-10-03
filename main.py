@@ -1,6 +1,5 @@
 # --encoding: utf-8
 """Module for searching degree."""
-
 from math import pi, ceil
 
 
@@ -13,10 +12,10 @@ def search_degree(axiliration: float, time: float, radius: float, speed: float):
     then the degree is returned
 
     Args:
-        time(float)
-        axiliration(float)
-        radius(float)
-        speed(float)
+        time: float
+        axiliration: float
+        radius: float
+        speed: float
     Returns:
         :return float
 
