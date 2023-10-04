@@ -5,7 +5,7 @@ from math import pi
 from math import ceil
 
 
-def search_degree(axiliration: float, time: float, radius: float, speed: float):
+def search_degree(acceleration: float, time: float, radius: float, speed: float):
     """Function for searches degree.
 
     First, it is imported from ceil and pi from the math module,
@@ -15,7 +15,7 @@ def search_degree(axiliration: float, time: float, radius: float, speed: float):
 
     Args:
         time: float
-        axiliration: float
+        acceleration: float
         radius: float
         speed: float
     Returns:
@@ -23,6 +23,6 @@ def search_degree(axiliration: float, time: float, radius: float, speed: float):
     """
     const_rad = 360
     length_circle = 2 * pi * radius
-    way = speed * time + (axiliration * time ** 2) / 2
+    way = speed * time + (acceleration * time ** 2) / 2
     factor = ceil(way / length_circle / const_rad)
     return round(const_rad * factor - way / length_circle, 2)

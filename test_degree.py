@@ -14,14 +14,14 @@ test = [
         ]
 
 
-@pytest.mark.parametrize('axiliration, time, radius, speed, exp', test)
-def test_degree(axiliration: float, time: float, radius: float, speed: float, exp: float):
+@pytest.mark.parametrize('acceleration, time, radius, speed, exp', test)
+def test_degree(acceleration: float, time: float, radius: float, speed: float, exp: float):
     """Compares the resulting value with the response.
 
     Function is comparing main answer and true answer
 
     Args:
-        axiliration: float
+        acceleration: float
         time: float
         radius: float
         speed: float
