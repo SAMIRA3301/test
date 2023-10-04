@@ -2,7 +2,6 @@
 """Testing search degree."""
 
 import pytest
-
 from main import search_degree
 
 test = [
@@ -11,20 +10,20 @@ test = [
     (10, 100, 2, 1000, 246.34),
     (10, 500, 2, 5000, 151.69),
     (17, 0, 2, 0, 0),
-        ]
+]
 
 
-@pytest.mark.parametrize('axiliration, time, radius, speed, exp', test)
-def test_degree(axiliration: float, time: float, radius: float, speed: float, exp: float):
+@pytest.mark.parametrize('acceleration, time, radius, speed, exp', test)
+def test_degree(acceleration: float, time: float, radius: float, speed: float, exp: float):
     """Compares the resulting value with the response.
 
-    Function is comparing main answer and true answer
+    Function is comparing main answer and true answer.
 
     Args:
-        axiliration: float
-        time: float
-        radius: float
-        speed: float
-        exp: float
+        acceleration: float.
+        time: float.
+        radius: float.
+        speed: float.
+        exp: float.
     """
-    assert search_degree(time, axiliration, radius, speed) == exp
+    assert search_degree(time, acceleration, radius, speed) == exp
