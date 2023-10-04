@@ -1,11 +1,12 @@
 # --encoding: utf-8
 """Module for searching degree."""
+
 from math import pi
 from math import ceil
 
 
 def search_degree(axiliration: float, time: float, radius: float, speed: float):
-    """Function is searching degree.
+    """Function for searches degree.
 
     First, it is imported from ceil and pi from the math module,
     then the length of the circle is calculated,
@@ -18,7 +19,7 @@ def search_degree(axiliration: float, time: float, radius: float, speed: float):
         radius: float
         speed: float
     Returns:
-        return float
+        - return float
     """
     const_rad = 360
     length_circle = 2 * pi * radius
