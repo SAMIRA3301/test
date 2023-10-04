@@ -19,7 +19,7 @@ def search_degree(axiliration: float, time: float, radius: float, speed: float):
         radius: float
         speed: float
     Returns:
-        - return float
+        return float
     """
     const_rad = 360
     length_circle = 2 * pi * radius
